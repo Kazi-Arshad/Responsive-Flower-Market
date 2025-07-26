@@ -178,6 +178,7 @@ header {
 
 .flower-plants {
     margin-top: 70px;
+    margin-bottom: 80px;
 }
 
 .flower-plants-img {
@@ -215,6 +216,60 @@ header {
 .flower-desc {
     margin-left: 0px;
     margin-top: 20px;
+}
+
+
+/* Latest Deals styles  */
+.offer-box {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    gap: 28px;
+}
+
+.cont2 {
+    display: grid;
+    gap: 92px;
+}
+
+.offer-img {
+    border-radius: 14px;
+    filter: brightness(44%);
+}
+.offer h3, p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.offer h3 {
+    font-weight: 700;
+}
+
+.offer p {
+    text-decoration: underline;
+}
+
+.deal1 {
+    position: relative;
+    margin-top: -137px;
+
+}
+
+.deal2 {
+    position: relative;
+    margin-top: -140px;
+
+}
+
+.deal3 {
+    position: relative;
+    margin-top: -280px;
+    font-size: 2.5rem;
+
+}
+
+.offer-img {
+    width: 100%;
 }
 
 /* footer styles  */
@@ -274,4 +329,24 @@ header {
         margin-top: 0px;
     }
 
+    .offer-box {
+        display: grid;
+        gap: 85px;
+        margin-left: 16px;
+    }
+
+    .offer div {
+        font-size: 1.25rem;
+    }
+
+    .cont2 {
+        gap: 80px;
+    }
+    .deal3 {
+        color: red;
+        position: absolute;
+        margin-left: 118px;
+        margin-top: -170px;
+    }
+    
 }
