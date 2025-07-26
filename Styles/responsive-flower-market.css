@@ -24,8 +24,13 @@
     display: flex;
 }
 
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 main,
-header {
+header, .foot {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -159,6 +164,7 @@ header {
     margin-top: 0;
     margin-bottom: 30px;
 }
+
 .card-img {
     width: 100%;
 }
@@ -187,7 +193,7 @@ header {
 
 .flower-plants-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
 }
 
@@ -222,7 +228,7 @@ header {
 /* Latest Deals styles  */
 .offer-box {
     margin-top: 100px;
-    margin-bottom: 120px;
+    margin-bottom: 180px;
     gap: 28px;
 }
 
@@ -235,12 +241,14 @@ header {
     border-radius: 14px;
     filter: brightness(44%);
 }
-.offer h3, p {
+
+.offer h3, .offer p {
     color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 10px;
     margin-top: 0;
 }
+
 .offer h3 {
     font-weight: 700;
 }
@@ -273,6 +281,96 @@ header {
 }
 
 /* footer styles  */
+
+/* join section styles  */
+
+.join-container {
+    display: block;
+}
+
+.join {
+    background-image: url('../assets/news-letter-bg.png');
+    margin: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.join-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.125rem;
+    margin-bottom: 23px;
+    color: white;
+    
+}
+
+.form {
+    /* max-width: 830px; */
+    display: flex;
+    margin-bottom: 60px;
+    width: 65%;
+}
+label {
+    margin: 0px;
+}
+.form input {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 410px;
+    font-size: 1rem;
+}
+
+.sub-btn {
+    /* padding-left: 54px;
+    padding-right: 54px; */
+}
+
+
+/* foot styles  */
+
+.foot {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 110px;
+}
+
+.foot-row {
+    display: grid;
+    gap: 26px;
+}
+
+.foot-row a {
+    color: gray;
+}
+
+.logos {
+    display: flex;
+    gap: 24px;
+}
+.logos img {
+    width: 100%;
+}
+
+.twitter {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -319,9 +417,9 @@ header {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 14px;
     }
-    
+
     .flower-plants-content {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin-left: 17px;
     }
 
@@ -342,11 +440,44 @@ header {
     .cont2 {
         gap: 80px;
     }
+
     .deal3 {
-        color: red;
+        color: rgb(255, 255, 255);
         position: absolute;
         margin-left: 118px;
         margin-top: -170px;
     }
-    
+
+
+    /* foot styles  */
+
+    .join {
+        background-size: cover;
+        height: 275px;
+        margin: 0;
+    }
+
+    .form {
+        max-width: 221px;
+    }
+
+    .form input {
+        padding-right: 12px;
+    }
+    .form {
+        margin-left: -95px;
+    }
+    .join-title {
+        font-size: 20px;
+    }
+
+    .foot {
+        margin-left: 20px;
+        margin-top: 50px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+
+
+
 }
